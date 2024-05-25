@@ -9,6 +9,6 @@ A discord currency and Honkai Star Rail gacha bot. With 21 application /commands
 
 **Server:** Node, MongoDB
 
-## Images
-![Currency Dice](./images/dice.png)
-![HSR Roll](./images/roll.png)
+## Example Images
+<img src="./images/dice.png" alt="Currency Dice" width="300" height="280"/>
+<img src="./images/roll.png" alt="HSR Roll" width="300" height="450"/>
