@@ -9,3 +9,6 @@ A discord currency and Honkai Star Rail gacha bot. With 21 application /commands
 
 **Server:** Node, MongoDB
 
+## Images
+![Currency Dice](./images/dice.png)
+![HSR Roll](./images/roll.png)
