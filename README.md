@@ -1,7 +1,8 @@
 # Discord Bot
 
 A discord currency and Honkai Star Rail gacha bot. With 21 application /commands. Implemented on active servers.
-
+Invite it to your server with the below link!
+https://discord.com/oauth2/authorize?client_id=1145351594565705810&permissions=8&scope=applications.commands+bot
 
 ## Tech Stack
 
