@@ -14,3 +14,7 @@ https://discord.com/oauth2/authorize?client_id=1145351594565705810&permissions=8
 ## Example Images
 <img src="./images/dice.png" alt="Currency Dice" width="300" height="280"/>
 <img src="./images/roll.png" alt="HSR Roll" width="300" height="450"/>
+
+## Bot fixes Log
+29/05/2024
+- Fixed issue with loot coins being used as exploit, by limiting rates of lootcoins and only adding half in three-doors command
