@@ -6,6 +6,7 @@ const lootBankSchema = new mongoose.Schema({
         required: true,
         default: 0,
     },
+    lootLastUsed: { type: Number, default: 0 },
 });
 
 const lootBankModel = mongoose.model('LootBank', lootBankSchema);
