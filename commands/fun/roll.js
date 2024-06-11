@@ -20,8 +20,8 @@ module.exports = {
         if (findHSRticket) {
             findHSRticket.quantity -= 1;
 
-            if (findHSRticket.quantity == 0) {
-                inventory.splice(findHSRticket, 1);
+            if (findHSRticket.quantity <= 0) {
+                inventory.splice(inventory.indexOf(findHSRticket), 1);
             }
 
             await profileModel.findOneAndUpdate(
@@ -137,7 +137,7 @@ function resultTicket(roll, star4, star5, guaranteedBanner) {
     let toAdd = '';
 	let msg = '';
 
-    if (roll < 0.6) {
+    if (roll < 0.006) {
         ({ msg, toAdd, guaranteedBanner } = get5star(guaranteedBanner));
     }
     else if (star5 >= 89) {

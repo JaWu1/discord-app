@@ -140,7 +140,7 @@ module.exports = {
 					// if you lose, its put in a bank
                     await lootBankModel.findOneAndUpdate(
 						{},
-                        { $inc: { bankBalance: Math.abs(amtChange/2) } },
+                        { $inc: { bankBalance: Math.round(Math.abs(amtChange / 2)) } },
                         { upsert: true, new: true }
                     );
                 }
