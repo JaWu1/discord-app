@@ -14,6 +14,10 @@ module.exports = {
 
         const lootBankFind = await lootBankModel.findOne({});
 
+        // Temp code to disable code
+        await interaction.reply({ content: `Loot is disabled for now`, ephemeral: true });
+        return;
+
         const cooldown = 10 * 60 * 1000; // 10 minutes in milliseconds
         const now = Date.now();
         const timeLeft = cooldown - (now - lootBankFind.lootLastUsed);

@@ -10,3 +10,7 @@ node_modules/
 # Ignore macOS system files
 .DS_Store
 config.json
+
+#Other
+.gitignore
+commands/fun/dan.js
