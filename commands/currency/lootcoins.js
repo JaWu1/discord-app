@@ -14,10 +14,6 @@ module.exports = {
 
         const lootBankFind = await lootBankModel.findOne({});
 
-        // Temp code to disable code
-        await interaction.reply({ content: `Loot is disabled for now`, ephemeral: true });
-        return;
-
         const cooldown = 10 * 60 * 1000; // 10 minutes in milliseconds
         const now = Date.now();
         const timeLeft = cooldown - (now - lootBankFind.lootLastUsed);
@@ -27,13 +23,6 @@ module.exports = {
             await interaction.reply({ content: `Loot again in ${minutes} min ${seconds} sec`, ephemeral: true });
             return;
         }
-
-        if (timeLeft > 0) {
-			await interaction.deferReply({ ephemeral: true });
-			const { minutes, seconds } = parseMilliseconds(timeLeft);
-			await interaction.editReply(`Loot again in ${minutes} min ${seconds} sec`);
-            return;
-		}
 
         if (balance < 500) {
             await interaction.deferReply({ ephemeral: true });
