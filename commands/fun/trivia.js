@@ -34,7 +34,6 @@ module.exports = {
             return;  // =>  { result... }
         });
 
-		//await interaction.reply({ embeds: [embed] });
 	},
 };
 
